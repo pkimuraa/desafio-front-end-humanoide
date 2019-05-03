@@ -1,0 +1,43 @@
+.button {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    border-radius: 25px;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #FF6143;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &:hover {
+        background: rgb(206, 38, 4);
+    }
+    @include phone{ 
+        font-size: 12px; 
+}
+}
+.button2{
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    border-radius: 25px;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #fff;
+    color: #fff;
+    color: #FF6143;
+    border: #FF6143 solid 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &:hover {
+        background:#FF6143;
+        color:white;
+    }
+    @include phone{
+        font-size: 12px;
+    }
+}

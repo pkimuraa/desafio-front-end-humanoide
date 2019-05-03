@@ -1,0 +1,154 @@
+$bg-color:#F1EFF1;
+.banner {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        min-width: 100%;
+        height: 562px;
+        background-color: $bg-color;
+        @include phone{
+            height: 209px;
+            flex-wrap: wrap;
+            margin-bottom: 300px;
+        }
+        &__confetti {
+            width: 100%;
+            position: absolute;
+            top: -40px;
+            @include phone{
+                top:60px;
+            }
+        }
+    &__img {
+        height: inherit;
+    }
+    &__container {
+        margin-left: 40%;
+        display: flex;
+        flex-direction: column;
+        & button {
+            margin-top: 2rem;
+            align-self: flex-start;
+        }
+    }
+    @include phone{
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 2.5rem;
+
+        margin-bottom: 20px;
+        @include phone{
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+
+
+    &__sub-header {
+        max-width: 461px;
+        font-size: 13px;
+        align-self: flex-end;
+        margin-bottom: 20px;
+        b {
+            color: #FF6143;
+        }
+        @include phone{
+            font-size: 10px;
+        }
+    }
+    &__sizes{
+        display: flex;
+        align-self: flex-start;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    &__price{
+        font-size:24px;
+        line-height: 28px;
+        @include phone{
+            font-size: 13px;
+        }
+    }
+}
+.size.active {
+    background-color: #FF6143;
+    color: white;
+}
+.size{
+    cursor: pointer;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    border: #FF6143 solid 1px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: all 0.3s;
+}
+
+.size:hover {
+    background-color: #FF6143;
+    color: white;
+}
+.hide {
+    display: none;
+}
+.modal {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 500vh;
+    background-color: rgba(0,0,0, 0.5);
+    
+    &__box {
+        position: fixed;
+        width: 788px;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px; /* Negative half of height. */
+        margin-left: -400px; /* Negative half of width. */
+        background-color: white;
+        opacity: 1;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include phone{
+            width: 327px;
+            margin-top: -50px;
+            margin-left: -160px;
+        }
+    }
+
+
+    &__buttons{
+        align-self: center;
+        justify-content: space-around;
+        margin-bottom: 90px;
+        margin-top: 45px;
+
+        @include phone{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+       
+ 
+    }
+    &__header{
+        font-size:28px;
+        width:305px;
+        text-align: center;
+    }
+    &__spacing{
+        padding: 20px;
+    }
+}

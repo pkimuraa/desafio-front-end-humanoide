@@ -1,0 +1,78 @@
+@mixin phone {
+    @media only screen and (max-width:480px){
+        @content;
+    }
+}
+.banner {
+    display: flex;
+    align-items: center;
+    height: 460px;
+    background-image: url("../../assets/images/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__confetti {
+        width: 100%;
+        position: absolute;
+        top: -150px;
+        @include phone{
+            top: -30px;
+        }
+    }
+    &__confetti--bottom {
+        width: 100%;
+
+        position: absolute;
+        bottom: -150px;
+        @include phone{
+            bottom: -30px;
+        }
+    }
+
+    @include phone{ 
+        height: 213px;
+        width: 480px;
+        background-position: right;
+}
+
+    &__container {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        & button {
+            margin-top: 2rem;
+            align-self: flex-end;
+            @include phone{ 
+               margin-top: 0.5rem;
+               align-self: initial;
+        }
+        }
+
+    }
+
+    &__header {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        @include phone{ 
+            font-size: 18px;
+            max-width: 150px;
+            height: 43px;  
+    }
+    }
+
+    &__sub-header {
+        font-size: 1.25rem;
+        align-self: flex-end;
+        text-transform: uppercase;
+        b {
+            color: #FF6143;
+        }
+        @include phone{ 
+            font-size: 14px;
+            max-width: 150px;
+            height: 43px;  
+    }
+    }
+}

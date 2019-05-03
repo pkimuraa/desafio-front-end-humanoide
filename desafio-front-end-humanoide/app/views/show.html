@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarnaStore</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/banner.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../assets/js/show.js"></script>
+
+</head>
+
+<body>
+    <div id="modal" class="modal hide">
+        <div class="modal__box">
+       
+                <img src="../assets/images/confetti.svg">
+                <h1>VIVAAA</h1>
+                <div class="modal__header">Adicionamos o item no seu carrinho!</div>
+                <div class="modal__buttons">    
+                        <button onclick="toggleModal()" class="button2">Continuar Comprando</button>
+                        <button onclick="toggleModal()" class="button">Ir para o carrinho</button>
+                </div>
+
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="nav__brand">
+            <image src="../assets/images/logo.svg"></image>
+        </div>
+        <div class="nav__header">
+            Venha ser felix no Carnaval!
+        </div>
+    </nav>
+
+    <div class="banner">
+            <img class="banner__confetti" src="../assets/images/confetti-banner.svg">
+        <img id="selectedPhoto" class="banner__img" src="../assets/images/fantasia-01.png"> 
+
+        
+        <div>
+ <!--            <div class="banner__image">
+                 <img src="../assets/images/fantasia-01.png"> 
+            </div> -->
+            
+            <div class="banner__header">
+                Fantasia 1
+            </div>
+            <div class="banner__sub-header">
+                    orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et ultrices neque. Arcu dui vivamus arcu felis bibendum. Fermentum dui faucibus in ornare. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Felis imperdiet proin fermentum leo.
+            </div>
+            <div class="banner__price">
+                De <s>R$200</s> por <b>R$100</b>
+            </div>
+            <div class="banner__sizes">
+                <div class="size active">
+                    PP
+                </div>
+                <div class="size">
+                    P
+                </div>
+                <div class="size">
+                    M
+                </div>
+                <div class="size">
+                    G
+                </div>
+            </div>
+            <button onclick="toggleModal()" class="button">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main__header">
+            <h2>
+            Se você comprar eu te dou um <b>Beijo</b> <span>(só se quiser)</span>
+            </h2>
+        </div>
+        <div class="main__container" id="photos-container">
+           <!--  <div class="p1">
+                <div class="photo foto1">
+                </div>
+                <span class="text">De <s>R$200</s> Por<b> R$100</b></span>
+                <button class="button">Compre Já</button>
+            </div>
+            <div class="p1">
+                <div class="photo foto2">
+                </div>
+                <span class="text">De <s>R$200</s> Por<b> R$100</b></span>
+                <button class="button">Compre Já</button>
+            </div>
+            <div class="p1">
+                 <div class="photo foto3">
+                 </div>
+                 <span class="text">De <s>R$200</s> Por<b> R$100</b></span>
+                 <button class="button">Compre Já</button>
+            </div>
+             -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="../assets/images/white-logo.svg">
+            contato@carnastore.com
+        </div>
+        <div class="footer__payment">
+            <span><img src="../assets/images/cards.svg"></span>
+            <span><img src="../assets/images/security-icon.svg"></span>
+        </div>
+        <hr>
+        <div class="footer__signature">
+            <p>Desenvolvido pela <span> <b>  Humanoide</b></span> </p>
+        </div>
+    </footer>
+</body>
+
+</html>

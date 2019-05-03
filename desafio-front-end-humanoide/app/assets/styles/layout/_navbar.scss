@@ -1,0 +1,31 @@
+@mixin phone {
+    @media only screen and (max-width:480px){
+        @content;
+    }
+}
+.nav {
+    display: flex;
+    height: 90px;
+    background-color: $nav--bg;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    @include phone{ 
+        justify-content: center;
+}
+
+    &__brand {
+        margin-left: 64px;
+        @include phone{
+            margin: 0px;
+        }
+    }
+
+    &__header {
+        margin-right: 64px;
+        @include phone{ 
+            display: none;
+    }
+    }
+
+}
